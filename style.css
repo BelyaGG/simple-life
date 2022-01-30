@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap");
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #F8F8F8;
+  padding: 10.5em 0;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-nav h1 {
+  font-family: "Lora", serif;
+  font-size: 3.3rem;
+  font-weight: 400;
+  color: #143774;
+}
+.container-nav p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #1792D2;
+  text-transform: uppercase;
+}
+
+.nav-wrapper {
+  display: flex;
+  list-style: none;
+}
+.nav-wrapper li {
+  margin-left: 4em;
+}
+.nav-wrapper li a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #717171;
+  padding: 0.5em 0;
+}
+.nav-wrapper li a:hover,
+.nav-wrapper li a :focus {
+  color: #1792D2;
+}
+
+.active {
+  border-bottom: 1px solid #717171;
+}
+.active:hover {
+  color: #717171 !important;
+}
+
+main {
+  padding: 5em 0;
+}
+
+.container-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-left {
+  width: 75%;
+}
+
+.col-right {
+  width: 20%;
+}
+
+.main-post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #707070;
+}
+.main-post .imgBx p {
+  margin: 2.6em 0;
+}
+
+.imgBx img {
+  width: 100%;
+}
+.imgBx p {
+  margin: 1.1em 0;
+}
+
+.post-date {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1.4rem;
+  color: #707070;
+}
+
+.post-title {
+  font-family: "Lora", serif;
+  font-size: 2.4rem;
+  color: #143774;
+}
+
+.post-des {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #707070;
+  margin: 1em 0;
+}
+.post-des u {
+  text-decoration: underline;
+  color: #1792D2;
+}
+
+.post-cta {
+  font-size: 1.4rem;
+  color: #1792D2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+}
+
+.other-post {
+  padding: 0 0 7em;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 0;
+}
+.item .imgBx {
+  width: 20%;
+}
+.item .imgBx img {
+  height: 24em;
+  object-fit: cover;
+}
+.item .post {
+  width: 75%;
+}
+
+.about {
+  padding: 2.5em;
+  border: 2em solid #EBEBEB;
+}
+.about img {
+  height: 13.3em;
+  width: 100%;
+  object-fit: cover;
+  margin: 1.7em 0 2.8em;
+}
+.about p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #143774;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #143774;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.recentPosts {
+  padding: 2.5em;
+  margin-top: 4.5em;
+  border: 2em solid #EBEBEB;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.4em;
+  border-bottom: 0.1em solid #707070;
+}
+.post-item img {
+  height: 8.7em;
+  width: 100%;
+}
+.post-item p {
+  font-size: 1.8rem;
+  color: #143774;
+  margin: 1em 0;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-title {
+  font-family: "Lora", serif;
+  font-size: 2.4rem;
+  color: #143774;
+  margin-top: 2.5em;
+}
+
+.about-des {
+  font-size: 1.8rem;
+  color: #707070;
+  margin: 1em 0;
+}
+.about-des span {
+  font-family: "Lora", serif;
+  font-size: 2.1rem;
+  color: #1792D2;
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.about-recentP {
+  margin: 0;
+}
+
+footer {
+  background-color: #143774;
+  text-align: center;
+}
+
+.footer {
+  padding: 6em 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  opacity: 54%;
+}
+.footer span {
+  font-weight: 300;
+}
+
+@media (max-width: 930px) {
+  header {
+    padding: 4em 0;
+  }
+
+  .container-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-title {
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 3em;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-wrapper li {
+    margin: 1.2em 0;
+  }
+
+  .container-main {
+    flex-direction: column;
+  }
+
+  .col-left {
+    width: 100%;
+  }
+
+  .main-post .imgBx p {
+    margin: 1.1em 0;
+  }
+
+  .other-post .item {
+    flex-direction: column;
+  }
+  .other-post .item .imgBx {
+    width: 100%;
+  }
+  .other-post .item .imgBx .post-date {
+    float: right;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+
+  .col-right {
+    width: 100%;
+  }
+
+  .post-item img {
+    object-fit: cover;
+  }
+
+  .about-recentP {
+    margin: 4.4em 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

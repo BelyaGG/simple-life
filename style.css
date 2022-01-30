@@ -21,21 +21,27 @@ html {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  color: #143774;
+}
+
 header {
   background-color: #F8F8F8;
-  padding: 10.5em 0;
+  padding: 4.5em 0;
 }
 
 .container-nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .container-nav h1 {
-  font-family: "Lora", serif;
   font-size: 3.3rem;
   font-weight: 400;
-  color: #143774;
 }
 .container-nav p {
   font-size: 1.2rem;
@@ -47,10 +53,13 @@ header {
 
 .nav-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
+  margin: 4em 0 1em;
 }
 .nav-wrapper li {
-  margin-left: 4em;
+  margin: 1em 0;
 }
 .nav-wrapper li a {
   font-size: 1.6rem;
@@ -71,133 +80,133 @@ header {
   color: #717171 !important;
 }
 
-main {
-  padding: 5em 0;
-}
-
 .container-main {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.col-left {
-  width: 75%;
-}
-
-.col-right {
-  width: 20%;
-}
-
-.main-post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid #707070;
-}
-.main-post .imgBx p {
-  margin: 2.6em 0;
-}
-
-.imgBx img {
-  width: 100%;
-}
-.imgBx p {
-  margin: 1.1em 0;
-}
-
-.post-date {
-  font-family: "Segoe UI", sans-serif;
-  font-size: 1.4rem;
-  color: #707070;
-}
-
-.post-title {
-  font-family: "Lora", serif;
-  font-size: 2.4rem;
-  color: #143774;
-}
-
-.post-des {
-  font-size: 1.8rem;
-  font-weight: 300;
-  color: #707070;
-  margin: 1em 0;
-}
-.post-des u {
-  text-decoration: underline;
-  color: #1792D2;
-}
-
-.post-cta {
-  font-size: 1.4rem;
-  color: #1792D2;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.28em;
-}
-
-.other-post {
-  padding: 0 0 7em;
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-  padding: 4em 0;
-}
-.item .imgBx {
-  width: 20%;
-}
-.item .imgBx img {
-  height: 24em;
-  object-fit: cover;
-}
-.item .post {
-  width: 75%;
-}
-
-.about {
-  padding: 2.5em;
-  border: 2em solid #EBEBEB;
-}
-.about img {
-  height: 13.3em;
-  width: 100%;
-  object-fit: cover;
-  margin: 1.7em 0 2.8em;
-}
-.about p {
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: #143774;
-}
-
-h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #143774;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.recentPosts {
-  padding: 2.5em;
-  margin-top: 4.5em;
-  border: 2em solid #EBEBEB;
-}
-
-.post-item {
+.article-featured {
   display: flex;
   flex-direction: column;
-  margin-top: 3.4em;
-  border-bottom: 0.1em solid #707070;
+  border-bottom: 1px solid #707070;
+  margin: 3em 0;
 }
-.post-item img {
-  height: 8.7em;
+
+.article-title {
+  font-size: 2.4rem;
+  order: 3;
+}
+
+.article-img {
   width: 100%;
+  order: 1;
 }
-.post-item p {
+.article-img:nth-child(1) {
+  height: 242px;
+  object-fit: cover;
+}
+
+.article-info {
+  font-size: 1.4rem;
+  color: #707070;
+  order: 2;
+  margin: 2em 0;
+}
+
+.article-body {
   font-size: 1.8rem;
-  color: #143774;
+  font-weight: 300;
+  color: #707070;
+  order: 4;
   margin: 1em 0;
+}
+.article-body u {
+  color: #1792D2;
+  text-decoration: underline;
+}
+
+.article-read-more {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1792D2;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  order: 5;
+  margin-bottom: 2em;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 5em 0;
+}
+
+.article-recent-main .article-title {
+  margin-top: -1em;
+}
+
+.article-recent-secondary .article-info {
+  float: right;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-widget {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: 2em solid #EBEBEB;
+  margin-bottom: 2em;
+}
+
+.widget-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #143774;
+  text-transform: uppercase;
+  margin-bottom: 1.7em;
+}
+
+.widget-img {
+  width: 100%;
+  height: 87px;
+  object-fit: cover;
+}
+
+.widget-img-about {
+  height: 133px;
+}
+
+.widget-body {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #143774;
+  margin: 2.8em 0;
+}
+
+.widget-recent-post {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #707070;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.widget-recent-post:last-child {
+  border: none;
+}
+
+.widget-recent-post-title {
+  font-size: 1.8em;
+  color: #143774;
+  font-weight: 400;
+  margin: 2em 0;
+}
+
+.article-about {
+  margin: 3em 0;
 }
 
 .about-img {
@@ -205,27 +214,20 @@ h3 {
 }
 
 .about-title {
-  font-family: "Lora", serif;
   font-size: 2.4rem;
   color: #143774;
-  margin-top: 2.5em;
-}
-
-.about-des {
-  font-size: 1.8rem;
-  color: #707070;
   margin: 1em 0;
 }
-.about-des span {
+
+.about-body {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #707070;
+}
+.about-body span {
   font-family: "Lora", serif;
   font-size: 2.1rem;
   color: #1792D2;
-  display: inline-block;
-  margin: 1em 0;
-}
-
-.about-recentP {
-  margin: 0;
 }
 
 footer {
@@ -244,68 +246,60 @@ footer {
   font-weight: 300;
 }
 
-@media (max-width: 930px) {
-  header {
-    padding: 4em 0;
-  }
-
+@media (min-width: 930px) {
   .container-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .site-title {
-    text-align: center;
-  }
-
-  nav {
-    margin-top: 3em;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav-wrapper {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
   .nav-wrapper li {
-    margin: 1.2em 0;
+    margin-left: 3em;
   }
 
   .container-main {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .col-left {
-    width: 100%;
+  main {
+    width: 70%;
   }
 
-  .main-post .imgBx p {
-    margin: 1.1em 0;
+  .article-title {
+    margin-bottom: 1em;
+    order: 0;
   }
 
-  .other-post .item {
-    flex-direction: column;
-  }
-  .other-post .item .imgBx {
-    width: 100%;
-  }
-  .other-post .item .imgBx .post-date {
-    float: right;
+  .article-featured .article-info {
+    margin: 1em 0 0;
   }
 
-  h2 {
-    font-weight: 400;
+  .article-recent {
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
-  .col-right {
-    width: 100%;
+  .article-recent-main {
+    width: 70%;
+  }
+  .article-recent-main .article-title {
+    margin: 0;
   }
 
-  .post-item img {
-    object-fit: cover;
+  .article-recent-secondary {
+    width: 25%;
+  }
+  .article-recent-secondary .article-info {
+    margin: 1em 0 0;
+    float: left;
   }
 
-  .about-recentP {
-    margin: 4.4em 0;
+  aside {
+    width: 25%;
+    margin-top: 3em;
   }
 }
 
